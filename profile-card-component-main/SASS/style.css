@@ -48,6 +48,18 @@ video {
   height: auto;
 }
 
+body {
+  background-color: var(--clr-primary-Dark-cyan);
+  background-image: url("../images/bg-pattern-bottom.svg"), url("../images/bg-pattern-top.svg");
+  background-position: 150% -75%, -50% -20%;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 :root {
   --clr-primary-Dark-cyan: hsl(185, 75%, 39%);
   --clr-primary-Very-dark-desaturated-blue: hsl(229, 23%, 23%);
@@ -57,4 +69,95 @@ video {
   --spc-border-10: 10px;
   --spc-border-17: 17px;
   --spc-font-size-18: 18px;
+}
+
+.Card__Stat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.Card__Stat h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--clr-primary-Very-dark-desaturated-blue);
+}
+.Card__Stat p {
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: var(--clr-neutral-Dark-gray);
+}
+
+.Card {
+  width: 20.375rem;
+  height: 23.375rem;
+  background: white;
+  border-radius: 0.9375rem;
+  position: relative;
+}
+@media screen and (min-width: 90rem) {
+  .Card {
+    width: 21.875rem;
+    height: 23.375rem;
+  }
+}
+.Card__Presentation {
+  height: 17.8125rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  display: grid;
+  border-bottom: 0.0625rem solid var(--clr-neutral-Dark-gray);
+}
+.Card__Identifier {
+  align-self: flex-end;
+  justify-self: center;
+  text-align: center;
+}
+.Card__Identifier h2 {
+  font-size: 0.8125rem;
+  font-family: "Kumbh sans", sans-serif;
+  margin-bottom: 1.75rem;
+  color: var(--clr-neutral-Dark-gray);
+}
+.Card__Name {
+  display: flex;
+  gap: 0.625rem;
+}
+.Card__Name h1 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1.0625rem;
+  font-family: "Kumbh Sans", sans-serif;
+  color: var(--clr-primary-Very-dark-desaturated-blue);
+}
+.Card__Name span {
+  margin-bottom: 1.0625rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--clr-neutral-Dark-gray);
+}
+.Card__Background img {
+  border-radius: 0.9375rem 0.9375rem 0rem 0rem;
+}
+.Card__ProfileImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Card__ProfileImage img {
+  transform: translateY(-50%);
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  border: 0.3125rem solid white;
+}
+.Card__Stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.625rem;
+  height: 5.5rem;
 }/*# sourceMappingURL=style.css.map */

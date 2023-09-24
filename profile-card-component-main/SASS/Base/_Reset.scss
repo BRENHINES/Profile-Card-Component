@@ -40,3 +40,15 @@ video {
     width: 100%;
     height: auto;
 }
+
+body {
+    background-color: var(--clr-primary-Dark-cyan);
+    background-image: url("../images/bg-pattern-bottom.svg"), url("../images/bg-pattern-top.svg");
+    background-position: 150% -75%, -50% -20%;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

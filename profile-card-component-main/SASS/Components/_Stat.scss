@@ -1,0 +1,18 @@
+.Card__Stat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+
+    h3 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: var(--clr-primary-Very-dark-desaturated-blue);
+    }
+
+    p {
+        font-size: .625rem;
+        font-weight: 400;
+        color: var(--clr-neutral-Dark-gray);
+    }
+}

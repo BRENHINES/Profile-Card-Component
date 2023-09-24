@@ -1,0 +1,84 @@
+.Card {
+    width: 20.375rem;
+    height: 23.375rem;
+    background: white;
+    border-radius: .9375rem;
+    position: relative;
+
+    @media screen and (min-width: 90rem) {
+        width: 21.875rem;
+        height: 23.375rem;
+    }
+
+    &__Presentation {
+        height: 17.8125rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        display: grid;
+        border-bottom: .0625rem solid var(--clr-neutral-Dark-gray);
+    }
+
+    &__Identifier {
+        align-self: flex-end;
+        justify-self: center;
+        text-align: center;
+
+        h2 {
+            font-size: .8125rem;
+            font-family: "Kumbh sans", sans-serif;
+            margin-bottom: 1.75rem;
+            color: var(--clr-neutral-Dark-gray);
+        }
+    }
+
+    &__Name {
+        display: flex;
+        gap: .625rem;
+
+        h1 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 1.0625rem;
+            font-family: "Kumbh Sans", sans-serif;
+            color: var(--clr-primary-Very-dark-desaturated-blue);
+        }
+
+        span {
+            margin-bottom: 1.0625rem;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--clr-neutral-Dark-gray);
+        }
+    }
+
+    &__Background {
+        img {
+            border-radius: .9375rem .9375rem 0rem 0rem;
+        }
+    }
+
+    &__ProfileImage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        img {
+            transform: translateY(-50%);
+            height: 6rem;
+            width: 6rem;
+            border-radius: 50%;
+            border: .3125rem solid white;
+        }
+    }
+
+    &__Stats {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.625rem;
+        height: 5.5rem;
+    }
+}
