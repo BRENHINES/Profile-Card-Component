@@ -1,0 +1,60 @@
+@import url("./Fonts/Kumbh_Sans/static/KumbhSans-Regular.ttf");
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("./Fonts/Kumbh_Sans/static/KumbhSans-Regular.ttf") format("truetype");
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+ul,
+ol,
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+  list-style-type: none;
+  text-rendering: optimizeLegibility;
+}
+
+a,
+button {
+  border: none;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+img,
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+:root {
+  --clr-primary-Dark-cyan: hsl(185, 75%, 39%);
+  --clr-primary-Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --clr-primary-Dark-grayish-blue: hsl(227, 10%, 46%);
+  --clr-neutral-Dark-gray: hsl(0, 0%, 59%);
+  --spc-margin-25: 25px;
+  --spc-border-10: 10px;
+  --spc-border-17: 17px;
+  --spc-font-size-18: 18px;
+}/*# sourceMappingURL=style.css.map */
